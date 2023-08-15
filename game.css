@@ -1,0 +1,11 @@
+:root{
+    --screen-width:     480px;
+    --screen-height:    800px;
+}
+#game{
+    width: var(--screen-width);
+    height: var(--screen-height);
+
+    border: solid;
+    background: peru;
+}

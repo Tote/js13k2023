@@ -1,0 +1,13 @@
+:root{
+    --player-size: 50px;
+}
+#player{
+    height: var(--player-size);
+    width: var(--player-size);
+    position:relative;
+
+    background: grey;
+    top: calc(var(--screen-height) - var(--player-size));
+    left: calc(var(--screen-width)/2 + var(--player-size)/2)
+
+}
