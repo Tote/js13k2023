@@ -8,4 +8,26 @@
 
     border: solid;
     background: peru;
+    overflow: hidden;
+}
+#game::after{
+    content : '';
+    position: relative;
+    top     : -100px;
+    left    : calc(var(--screen-width)/2);
+    height  : calc(var(--screen-height) * 1.5);
+    width   : 0;
+    border  : brown dotted 10px;
+    display : block;
+    background-color: transparent;
+}
+
+
+#game.running::after{
+    animation: background-running .5s linear infinite;    
+}
+
+@keyframes background-running {
+    0%      { top: -200px;  }
+    100%    {top: -100px;   }
 }
