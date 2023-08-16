@@ -8,6 +8,11 @@
 
     background: grey;
     top: calc(var(--screen-height) - var(--player-size));
-    left: calc(var(--screen-width)/2 + var(--player-size)/2)
+    left: calc(var(--screen-width)/2 + var(--player-size)/2);
+    transition: top 3s ;
 
+}
+
+#player.running{
+    top: calc(var(--screen-height) / 2);
 }
