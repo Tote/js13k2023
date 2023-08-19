@@ -1,0 +1,18 @@
+:root{
+    --enemy-size: 50px;
+}
+#enemy{
+    height: var(--enemy-size);
+    width: var(--enemy-size);
+    position:relative;
+
+    background: darkgrey;
+    top: -200px;
+    left: calc(var(--screen-width)/2 - var(--player-size));
+    transition: top 5s ;
+
+}
+
+#enemy.running{
+    top: calc(var(--screen-height));
+}
