@@ -1,0 +1,16 @@
+:root{
+    --weapon-size: 100px;
+}
+#weapon{
+    width   : 5px;
+    height  : var(--weapon-size);
+    background: black;
+    position: relative;
+    top: calc(-.8 * var(--weapon-size));
+    transition: transform .1s;
+    transform-origin: bottom;
+}
+
+#weapon.attack{
+    transform: rotate(-45deg);    
+}

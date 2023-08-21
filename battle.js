@@ -11,5 +11,9 @@ window.addEventListener('PLAYER_ATTACK', e=>{
     } else {
         enemy.style.backgroundColor = 'green'
     }
+
+    const weaponElem = document.getElementById('weapon')
+    weaponElem.classList.add('attack')
+    window.setTimeout(e=> weaponElem.classList.remove('attack'), 100)
 })
 

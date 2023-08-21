@@ -1,16 +1,17 @@
 :root{
-    --player-size: 50px;
+    --player-size: 100px;
 }
 #player{
     height: var(--player-size);
     width: var(--player-size);
     position:relative;
 
-    background: grey;
+    background: url('img/player.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
     top: calc(var(--screen-height) - var(--player-size));
     left: calc(var(--screen-width)/2 + var(--player-size)/2);
-    transition: top 3s ;
-
+    transition: top 3s;
 }
 
 #player.running{
