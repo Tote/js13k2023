@@ -1,6 +1,7 @@
 const background = document.getElementById('game')
 const player     = document.getElementById('player')
-
+  
+/** Player movement */
 window.addEventListener('PLAYER_RUN', e=>{
     background.classList.add('running')
     player.classList.add('running')
@@ -15,6 +16,3 @@ player.addEventListener('transitionend', e=> {
     player.style.setProperty('top', getComputedStyle(player).top)
 })
 
-window.addEventListener('PLAYER_ATTACK', e=>{
-    console.log('attacked at ' + getComputedStyle(player).top)
-})
